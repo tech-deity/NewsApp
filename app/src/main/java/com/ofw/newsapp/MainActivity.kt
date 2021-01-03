@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //this is comment
+
         recyclerView.layoutManager=LinearLayoutManager(this)
 
         val items = fetchData()
