@@ -11,6 +11,7 @@ import java.util.ArrayList
 class NewsListAdapter(private  val items:ArrayList<String>,private  val listener:NewsItemClicked): RecyclerView.Adapter<NewsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):NewsViewHolder {
+        
         val view =LayoutInflater.from(parent.context).inflate(R.layout.item_view,parent,false)
        val viewHolder=NewsViewHolder(view)
         view.setOnClickListener {
